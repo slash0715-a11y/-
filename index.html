@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《今日菜單：隨機大師》</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wr-frame-outer">
+        <div class="wr-scroll-inner">
+
+            <div class="container"> 
+                
+                <h1>《今日菜單：隨機大師》</h1>
+                <hr class="wr-hr">
+
+                <section class="category-select">
+                    <h2 class="wr-section-header">1. 選擇今日菜單類別</h2>
+                    <select id="category-picker"> 
+                        <option value="小吃">台灣小吃</option>
+                        <option value="便當/簡餐">便當 / 簡餐</option>
+                        <option value="便利商店">便利商店鮮食</option>
+                        <option value="低價位餐廳">NT$200-500 低價位餐廳</option>
+                        <option value="中高價位餐廳">NT$500-2000 中高價位餐廳</option>
+                        <option value="吃到飽">吃到飽專區</option>
+                    </select>
+                </section>
+                
+                <hr class="wr-hr">
+                
+                <section class="info-section">
+                    <h2 class="wr-section-header">清單資訊</h2>
+                    <p class="meal-list-info">
+                        Ⅱ 當前類別菜色總數 <span id="meal-count">0</span> 項
+                    </p>
+                </section>
+                
+                <hr class="wr-hr">
+
+                <section class="random-picker">
+                    <h2 class="wr-section-header">2. 隨機選取</h2>
+                    <button id="pick-btn" class="wr-btn-hero">
+                        <span class="icon-flame">🔥</span> 立即選定！ <span class="icon-flame">💥</span>
+                    </button>
+                    
+                    <div id="result-area">
+                        <p id="result-text">點擊按鈕，為您決定今日美食！</p>
+                    </div>
+                </section>
+                
+            </div>
+        </div> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
